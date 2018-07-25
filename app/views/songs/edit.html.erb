@@ -1,0 +1,14 @@
+<h1>Edit Song</h1>
+<%= form_for @song do |f| %>
+<%= f.label "Title" %>
+<%= f.text_field :title %>
+<%= f.label "Artist" %>
+<%= f.text_field :artist_name %>
+<%= f.label "Genre" %>
+<%= f.text_field :genre %>
+<%= f.label "Released" %>
+<%= f.check_box :released %>
+<%= f.label "Release Year" %>
+<%= f.text_field :release_year %>
+<%= f.submit%>
+<%end%>
